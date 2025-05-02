@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color:  #A19A97; 
+}
+
+.container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.search-form,
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input,
+select,
+button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d3744;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.book-card {
+  background: #e7d8db;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  border-radius: 6px;
+}
+
+.book-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.placeholder {
+  width: 100%;
+  height: 180px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+
+.pagination {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .search-form,
+  .filters {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  input,
+  select,
+  button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .book-card h3 {
+    font-size: 1rem;
+  }
+
+  .book-card p {
+    font-size: 0.9rem;
+  }
+}
